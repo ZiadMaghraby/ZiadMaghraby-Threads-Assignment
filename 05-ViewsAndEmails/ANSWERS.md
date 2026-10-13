@@ -1,10 +1,49 @@
 # Part 05 - ViewsAndEmails
 
 Student name: Ziad Mohamed Elmaghraby
-Group / ID: TODO
+
 
 ## Original runs
-TODO: Paste actual console output and measurements before editing.
+Unhandled exception. System.ArgumentException: Source array was not long enough. Check the source index, length, and the array's lower bounds. (Parameter 'sourceArray')
+   at System.Array.CopyImpl(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   at System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   at System.Collections.Generic.Queue`1.SetCapacity(Int32 capacity)
+   at System.Collections.Generic.Queue`1.Enqueue(T item)
+   at ViewsAndEmails.AnalyticsAndEmailJobs.PlaceOrder(Int32 orderId) in C:\Users\20102\source\repos\ZiadMaghraby-Threads-Assignment\05-ViewsAndEmails\ViewsAndEmails\AnalyticsAndEmailJobs.cs:line 26
+   at Program.<>c__DisplayClass0_1.<<Main>$>b__1() in C:\Users\20102\source\repos\ZiadMaghraby-Threads-Assignment\05-ViewsAndEmails\ViewsAndEmails\Program.cs:line 20
+   at System.Threading.Thread.StartCallback()Unhandled exception. System.ArgumentException: Source array was not long enough. Check the source index, length, and the array's lower bounds. (Parameter 'sourceArray')
+   at System.Array.CopyImpl(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   at System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   at System.Collections.Generic.Queue`1.SetCapacity(Int32 capacity)
+   at System.Collections.Generic.Queue`1.Enqueue(T item)
+   at ViewsAndEmails.AnalyticsAndEmailJobs.PlaceOrder(Int32 orderId) in C:\Users\20102\source\repos\ZiadMaghraby-Threads-Assignment\05-ViewsAndEmails\ViewsAndEmails\AnalyticsAndEmailJobs.cs:line 26
+   at Program.<>c__DisplayClass0_1.<<Main>$>b__1() in C:\Users\20102\source\repos\ZiadMaghraby-Threads-Assignment\05-ViewsAndEmails\ViewsAndEmails\Program.cs:line 20
+   at System.Threading.Thread.StartCallback()Unhandled exception. System.ArgumentException: An item with the same key has already been added. Key: koshary-bowl
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at ViewsAndEmails.AnalyticsAndEmailJobs.RecordView(String product) in C:\Users\20102\source\repos\ZiadMaghraby-Threads-Assignment\05-ViewsAndEmails\ViewsAndEmails\AnalyticsAndEmailJobs.cs:line 19
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__0() in C:\Users\20102\source\repos\ZiadMaghraby-Threads-Assignment\05-ViewsAndEmails\ViewsAndEmails\Program.cs:line 11
+   at System.Threading.Thread.StartCallback()Unhandled exception. System.Collections.Generic.KeyNotFoundException: The given key 'koshary-bowl' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at ViewsAndEmails.AnalyticsAndEmailJobs.RecordView(String product) in C:\Users\20102\source\repos\ZiadMaghraby-Threads-Assignment\05-ViewsAndEmails\ViewsAndEmails\AnalyticsAndEmailJobs.cs:line 21
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__0() in C:\Users\20102\source\repos\ZiadMaghraby-Threads-Assignment\05-ViewsAndEmails\ViewsAndEmails\Program.cs:line 11
+   at System.Threading.Thread.StartCallback()Unhandled exception. System.ArgumentException: Source array was not long enough. Check the source index, length, and the array's lower bounds. (Parameter 'sourceArray')
+   at System.Array.CopyImpl(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   at System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   at System.Collections.Generic.Queue`1.SetCapacity(Int32 capacity)
+   at System.Collections.Generic.Queue`1.Enqueue(T item)
+   at ViewsAndEmails.AnalyticsAndEmailJobs.PlaceOrder(Int32 orderId) in C:\Users\20102\source\repos\ZiadMaghraby-Threads-Assignment\05-ViewsAndEmails\ViewsAndEmails\AnalyticsAndEmailJobs.cs:line 26
+   at Program.<>c__DisplayClass0_1.<<Main>$>b__1() in C:\Users\20102\source\repos\ZiadMaghraby-Threads-Assignment\05-ViewsAndEmails\ViewsAndEmails\Program.cs:line 20
+   at System.Threading.Thread.StartCallback()Unhandled exception. System.Collections.Generic.KeyNotFoundException: The given key 'koshary-bowl' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at ViewsAndEmails.AnalyticsAndEmailJobs.RecordView(String product) in C:\Users\20102\source\repos\ZiadMaghraby-Threads-Assignment\05-ViewsAndEmails\ViewsAndEmails\AnalyticsAndEmailJobs.cs:line 21
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__0() in C:\Users\20102\source\repos\ZiadMaghraby-Threads-Assignment\05-ViewsAndEmails\ViewsAndEmails\Program.cs:line 11
+   at System.Threading.Thread.StartCallback()Unhandled exception. System.Collections.Generic.KeyNotFoundException: The given key 'koshary-bowl' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at ViewsAndEmails.AnalyticsAndEmailJobs.RecordView(String product) in C:\Users\20102\source\repos\ZiadMaghraby-Threads-Assignment\05-ViewsAndEmails\ViewsAndEmails\AnalyticsAndEmailJobs.cs:line 21
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__0() in C:\Users\20102\source\repos\ZiadMaghraby-Threads-Assignment\05-ViewsAndEmails\ViewsAndEmails\Program.cs:line 11
+   at System.Threading.Thread.StartCallback()
+
 
 ## Problems and causes
 TODO: Explain in your own words.
