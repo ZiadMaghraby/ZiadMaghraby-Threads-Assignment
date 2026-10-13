@@ -20,4 +20,4 @@ foreach (Thread w in workers)
     w.Join();
 
 Console.WriteLine($"Expected: {expected}");
-Console.WriteLine($"Actual:   {counter.Views}");
+Console.WriteLine($"Actual:   {counter.ViewCount}");

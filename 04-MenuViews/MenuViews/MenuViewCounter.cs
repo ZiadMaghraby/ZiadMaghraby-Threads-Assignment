@@ -2,10 +2,11 @@ namespace MenuViews;
 
 public sealed class MenuViewCounter
 {
-    public int Views;
+    private int _viewCount;
+    public int ViewCount => _viewCount;
 
     public void RegisterView()
     {
-        Views++;
+        Interlocked.Increment(ref _viewCount);
     }
 }

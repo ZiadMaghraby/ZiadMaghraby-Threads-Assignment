@@ -4,19 +4,26 @@ Student name: Ziad Mohamed Elmaghraby
 Group / ID: TODO
 
 ## Original runs
-TODO: Paste actual console output and measurements before editing.
+Expected: 400000
+Actual:   92054
+
+Expected: 400000
+Actual:   117703
+
+
 
 ## Problems and causes
-TODO: Explain in your own words.
+app is not thread safe, and the counter is being updated by multiple threads without any synchronization. This leads to a race condition where multiple threads read and write to the counter simultaneously, resulting in lost updates and an incorrect final count.
 
 ## Changes and reasoning
-TODO
+replaced the counter variable with an `Interlocked` operation to ensure atomic updates to the counter. This prevents race conditions by ensuring that only one thread can update the counter at a time.
 
 ## Runs after the fix
-TODO: Paste actual output from repeated runs.
+Expected: 400000
+Actual:   400000
 
 ## Required discussion
-TODO: Explain the counter race, your chosen tool, and when another form of protection is needed.
+the original code had a race condition due to multiple threads updating a shared counter without synchronization. This caused the final count to be less than expected. By using `Interlocked` operations, we ensured that updates to the counter are atomic, preventing lost updates and ensuring the final count is correct.
 
 ## Recorded original starter runs
 
